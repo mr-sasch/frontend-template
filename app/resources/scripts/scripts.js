@@ -1,13 +1,20 @@
 // Адаптация шапки
-var headerLogoHeight = document.querySelector('.header__logo').offsetHeight;
-var headerWrap = document.querySelector('.header-wrap');
+// var item = document.getElementById('nav__nav-item-inner');
+// var itemWidth = item.offsetWidth;
+// item.style.width = itemWidth + 'px';
+
+function navAdapt() {
+  var navLogoHeight = document.querySelector('.nav__logo').offsetHeight;
+  var navWrap = document.querySelector('.nav-wrap');
+  var navHeight = navWrap.offsetHeight;
+  if (navHeight > 80) {
+    navWrap.style.justifyContent = 'center';
+  } else {
+    navWrap.style.justifyContent = 'space-between';
+  };
+}
+navAdapt();
 
 document.body.onresize = function() {
-  var headerHeight = headerWrap.offsetHeight;
-  console.log(headerHeight);
-  if (headerHeight > 80) {
-    headerWrap.style.justifyContent = 'center';
-  } else {
-    headerWrap.style.justifyContent = 'space-between';
-  };
+  navAdapt();
 };

@@ -1,10 +1,10 @@
 // Шапка
-.header
-	background-color greyHeader
+.nav
 	padding 5px 0
+	background-color greyHeader
 
 // Обертка
-.header-wrap
+.nav-wrap
 	display flex
 	color greyTxtHeader
 	justify-content space-between
@@ -12,66 +12,65 @@
 	flex-wrap wrap
 
 // Контакты
-.header__cont
+.nav__cont
 	color greenTxt
-.header__cont-phone,
-.header__cont-mail
-	background-repeat no-repeat
+.nav__cont-phone,
+.nav__cont-mail
 	padding-left 20px
+	background-repeat no-repeat
 	background-position left center
-.header__cont-mail
-	background-image url('../../images/header-mail.png')
+.nav__cont-mail
 	margin-top 2px
-.header__cont-phone
-	background-image url('../../images/header-phone.png')
+	background-image url('../../images/nav-mail.png')
+.nav__cont-phone
+	background-image url('../../images/nav-phone.png')
 
 // Поиск
-.header__search
+.nav__search
 	position relative
 	width 41px
 	height 34px
-.header__search-block
+.nav__search-block
 	position absolute
-	height 100%
-	width 100%
 	top 0
 	right 0
 	padding-right 36px
 	padding-left 5px
-	background-image url('../../images/header-search.png')
+	width 100%
+	height 100%
+	color greyTxtHeader
+	background-color greyHeader
+	background-image url('../../images/nav-search.png')
 	background-repeat no-repeat
 	background-position calc(100% - 5px) center
-	background-color rgba(#ffffff, 0)
 	border  1px solid #b7b7b7
-	background-color greyHeader
 	transition width .2s ease
-	color greyTxtHeader
-.header__search-block:focus
+.nav__search-block:focus
 	width 200px
 
 // Навигация
-.header__nav
+.nav__nav
 	display flex
 	justify-content space-between
-.header__nav-item
-	padding 0 10px
+.nav__nav-item
 	position relative
-	color inherit
+	padding 0 10px
 	text-decoration none
+	color inherit
 	transition .2s ease
-.header__nav-item:hover
-	color greenTxt
+.nav__nav-item:hover
 	text-decoration underline
+	color greenTxt
 
-.header__nav-item:after
-	content ''
+.nav__nav-item:after
 	position absolute
-	height 120%
-	right 0
 	top 50%
-	transform translateY(-50%)
+	right 0
+	height 120%
+	content ''
 	border-right 1px solid #fff
-.header__nav-item:last-child:after
+	transform translateY(-50%)
+.nav__nav-item:last-child:after
 	display none
-.fa-chevron-down__header
+.fa-chevron-down__nav
 	font-size 10px
