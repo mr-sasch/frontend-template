@@ -1,6 +1,7 @@
 extends /blocks/layout-default/layout-default
 include /blocks/nav/nav
 include /blocks/main-slider/main-slider
+include /blocks/main-art1/main-art1
 
 block head
 	- var pageTitle = 'Шаблон для верстки';
@@ -8,3 +9,4 @@ block head
 block content
 	+nav
 	+main-slider
+	+main-art1()
