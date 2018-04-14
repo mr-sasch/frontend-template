@@ -4,15 +4,16 @@
 
 // Заголовок блока
 .block-title__txt
-	display inline-block
 	padding-right 15px
-	font-family 'Roboto'
+	display inline-block
+	float left
 	font-size 30px
 	color greyTxt
-	float left
 
 .block-title__line
+	margin-top 4px
 	height 0
+	flex-grow 1
 	border 1px solid greyTxt
 
 .block-title
@@ -22,6 +23,161 @@
 	flex-grow 1
 	display flex
 	align-items center
-.block-title__line
-	flex-grow 1
-	margin-top 4px
+
+// Добро пожаловать
+.welcome-wrap
+	width 552px
+	height 455px
+
+.welcome
+	padding 30px 45px
+
+.welcome__title
+	padding-bottom 20px
+	display inline-block
+	font-size 40px
+	font-weight 500
+	color greyTxt
+	border-bottom 1px solid #949494
+.welcome__text
+	padding-top 20px
+	font-size 18px
+	line-height 26px
+	color #000
+
+// Карточки новостей
+.art
+	display flex
+	flex-direction column
+.art__img
+	width 100%
+
+.art__text-block
+	position relative
+	padding-bottom 60px
+
+.art__title
+	font-size 20px
+	font-weight 500
+	margin-top 20px
+	padding 0 30px
+
+.art__link
+	display block
+	position absolute
+	bottom 25px
+	right 30px
+	text-align right
+	font-size 16px
+	color #000
+	text-decoration none
+
+.art__link:hover
+	text-decoration underline
+
+.welcome__text.welcome__text_art
+	padding 20px 30px 0
+
+.art-wrap
+	width 464px
+	margin 20px
+
+	// Горизонтальный блок
+.art-horizontal
+	display flex
+	.art
+		flex-direction row
+		padding-bottom 0
+	.art__img
+		width inherit
+	.art__text-block
+		max-width 560px
+
+// Баннер
+.main__banner-wrap
+	margin 20px
+
+.main__banner
+	display flex
+	justify-content center
+	align-items center
+	width 347px
+	height 294px
+	background-image url('../../images/main-banner.png')
+	background-size cover
+	background-position center
+.main__banner-txt
+	max-width 280px
+	font-size 24px
+	line-height 30px
+	font-weight 500
+	color #fff
+
+// Качественные переводы с китайского
+.main__trns
+	display flex
+	justify-content center
+	align-items center
+	height 420px
+	text-align center
+	background-image url('../../images/main-translations.png')
+	background-size cover
+	background-position center
+
+.main__trns-inner
+	max-width 1000px
+
+.main__trns-title
+	font-size 72px
+	line-height 60px
+	font-weight 600
+	color #fff
+.main__trns-txt
+	margin 25px 0 30px
+	font-size 24px
+	line-height 30px
+	color #fff
+.main__trns-btn
+	display inline-block
+	padding 7px 15px
+	font-size 24px
+	color #fff
+	border 3px solid rgba(255, 255, 255, 0.7)
+	background-color rgba(131,0,0,0.7)
+	cursor pointer
+
+// Место для баннерной рекламы на сайте
+.main__bnr-big
+	display flex
+	justify-content center
+	align-items center
+	background-color #93cac4
+	height 246px
+	color #fff
+	font-size 36px
+	font-weight 600
+
+// Возникли вопросы
+.main__qstns
+	background-color #adc85a
+	padding 30px 0
+	text-align center
+	.main__trns-btn
+		background-color rgba(131,0,0,1)
+		border-color rgba(255, 255, 255, 1)
+		display inline-block
+		vertical-align middle
+
+.main__qstns-title
+	margin-bottom 25px
+	font-size 30px
+	font-weight 600
+	color #fff
+	text-shadow 5px 3px 5px rgba(0, 0, 0, .33)
+
+.main__qstns-input
+	border none
+	padding 12px
+	margin 0 10px
+	font-style italic
+	vertical-align middle
