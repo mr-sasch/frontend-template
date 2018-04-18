@@ -1,0 +1,87 @@
+// Footer
+.footer
+	display block
+
+.footer__top-bg
+	height 100%
+	padding-top 40px
+	background-color greyHeader
+	background-image url('../../images/footer-top.png')
+	background-repeat no-repeat
+	background-position left 100%
+
+.footer__separator
+	margin 20px 0
+	border-bottom 1px solid greySepar
+
+	// Копирайт
+.footer__copyright
+	margin-bottom 20px
+	font-size 16px
+	color greyTxtHeader
+	text-align center
+
+.footer__bottom
+	height 40px
+	background-image url('../../images/footer-bottom.png')
+	background-color greyHeader
+	background-size auto 100%
+	// background-position 100% 0
+
+.footer__cols
+	display flex
+	justify-content space-around
+
+.footer__logo-img
+	margin-bottom 20px
+
+.footer__title
+	font-size 20px
+	font-weight 400
+	color #fff
+	margin-bottom 15px
+
+.footer__col-1
+	max-width 390px
+
+.footer__txt
+	font-size 18px
+	font-weight 300
+	line-height 22px
+	color greyTxtHeader
+
+.footer__phones
+	margin-bottom 20px
+
+.nav__cont-phone.nav__cont-phone-footer,
+.nav__cont-phone.nav__cont-phone-footer,
+.nav__cont-mail.nav__cont-mail-footer
+	padding-left 25px
+
+.nav__cont-phone-footer-2
+	margin 5px 0
+
+// 3 колонка
+.footer__nav-item-a
+	position relative
+	font-size 18px
+	line-height 25px
+	color greyTxtHeader
+	text-decoration none
+	transition .2s ease
+.footer__nav-item-a:after
+	display block
+	width 0
+	height 1px
+	content ''
+	position absolute
+	bottom 0
+	border-bottom 1px solid greenTxt
+	transition .2s ease
+.footer__nav-item-a:hover:after,
+.footer__nav-item-a.active:after
+	width 100%
+.footer__nav-item-a:hover,
+.footer__nav-item-a.active
+	color greenTxt
+// /Footer

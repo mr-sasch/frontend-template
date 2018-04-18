@@ -51,15 +51,16 @@ mixin main-art1()
 				.art-wrap
 					+article('images/main-art7.png', 'Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста ', '#')
 			// Место для баннерной рекламы на сайте
-			.main__bnr-big-wrap.container
-				.main__bnr-big-txt Место для баннерной рекламы на сайте
-			// Возникли вопросы?
-			.main__qstns-wrap
-				.main__qstns
-					.main__qstns-title Возникли вопросы? Оставьте свои контактные данные и наш менеджер свяжется с вами.
-					mixin mainInput(name, plch)
-						input(type='text' name= name placeholder= plch).main__qstns-input
-					+mainInput('name', 'Имя')
-					+mainInput('tel', '+375')
-					+mainInput('mail', 'Email')
-					+redBtn('Отправить')
+			.main__bnr-big-wrap
+				.main__bnr-big.container
+					.main__bnr-big-txt Место для баннерной рекламы на сайте
+		// Возникли вопросы?
+		.main__qstns-wrap
+			.main__qstns
+				.main__qstns-title Возникли вопросы? Оставьте свои контактные данные и наш менеджер свяжется с вами.
+				mixin mainInput(name, plch)
+					input(type='text' name= name placeholder= plch).main__qstns-input
+				+mainInput('name', 'Имя')
+				+mainInput('tel', '+375')
+				+mainInput('mail', 'Email')
+				+redBtn('Отправить')
