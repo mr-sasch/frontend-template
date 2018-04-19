@@ -2,6 +2,11 @@
 .main-art1
 	display block
 
+// 1 ряд
+.main-1row
+	display flex
+	justify-content space-between
+
 // Заголовок блока
 .block-title__txt
 	padding-right 15px
@@ -26,11 +31,11 @@
 
 // Добро пожаловать
 .welcome-wrap
-	width 552px
-	height 455px
+	width 550px
 
 .welcome
 	padding 30px 45px
+	height 100%
 
 .welcome__title
 	padding-bottom 20px
@@ -48,6 +53,7 @@
 // Карточки новостей
 .art
 	display flex
+	height 100%
 	flex-direction column
 .art__img
 	width 100%
@@ -79,8 +85,7 @@
 	padding 20px 30px 0
 
 .art-wrap
-	margin 20px
-	width 464px
+	width 341px
 
 	// Горизонтальный блок
 .art-horizontal
@@ -94,8 +99,8 @@
 		max-width 560px
 
 // Баннер
-.main__banner-wrap
-	margin 20px
+// .main__banner-wrap
+// 	margin 20px
 
 .main__banner
 	display flex
@@ -181,3 +186,8 @@
 	font-style italic
 	vertical-align middle
 	border none
+
+// 4 Важные статьи
+.articles
+	display flex
+	justify-content space-between

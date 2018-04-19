@@ -1,17 +1,17 @@
 mixin nav()
 	+b.nav&attributes(attributes)
 		block
-		.nav-wrap.container
-			img.col.nav__logo(src='images/logo.png')
-			nav.col.nav__nav
+		.nav-wrap.g-container
+			img.g-cell.nav__logo(src='images/logo.png')
+			nav.g-cell.nav__nav
 				a(href='#').nav__nav-item Законы КНР
 				a(href='#').nav__nav-item Бюро переводов
 				a(href='#').nav__nav-item Полезные ссылки
 				a(href='#').nav__nav-item Китаеведы, НИИ
 				a(href='#').nav__nav-item.nav__nav-item-more Еще
 					i.fas.fa-chevron-down.fa-chevron-down__nav
-			.nav__cont.col
+			.nav__cont.g-cell
 				.nav__cont-phone +375 29 123 45 67
 				.nav__cont-mail info@bambuk.com
-			.nav__search.col
+			.nav__search.g-cell
 				input(type='text').nav__search-block
